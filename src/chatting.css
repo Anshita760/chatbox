@@ -1,0 +1,158 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.chat-section{
+    height: 100%;
+    background-color: #d8daff;
+    right: 0px;
+    left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.display-chat{
+    height: 360px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.display-chat::-webkit-scrollbar {
+    width: 5px;               /* width of the entire scrollbar */
+}
+
+.display-chat::-webkit-scrollbar-track {
+    background: #e4e2e2;         /* color of the tracking area */
+    border-radius: 20px;
+}
+
+.display-chat::-webkit-scrollbar-thumb {
+    background-color: #abbefb;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+}
+.admin-chat{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 5px;
+}
+.admin-chat-text{
+    padding: 6px;
+    background-color: #6c97f3;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.admin-text1-person{
+    font-size: 22px !important;
+    animation: text1Person 0.3s ease-out;
+}
+@keyframes text1Person{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.admin-text1{
+    animation: chatPopup1 1s ease-in-out;
+}
+@keyframes chatPopup1{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
+    }
+    70%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.admin-text2-person{
+    font-size: 22px !important;
+    animation: text2Person 1.2s ease-out;
+}
+@keyframes text2Person{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0);
+    }
+    80%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.admin-text2{
+    animation: chatPopup2 2s ease-in-out;
+}
+@keyframes chatPopup2{
+    0%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(0);
+    }
+    60%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.user-chat{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.user-chat-text{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.user-chat-text p{
+    border-radius: 8px;
+    padding: 7px;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+}
+.type-text{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+    margin-bottom: 60px;
+    /* border: solid; */
+}
+.type-text input{
+    width: 70%;
+    position: sticky;
+    border-radius: 10px;
+    padding: 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    border: 1px solid #e4e2e2;
+}
